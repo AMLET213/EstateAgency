@@ -1,0 +1,425 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: inter;
+    font-weight: 450;
+}
+
+body p {
+    line-height: 1.3em;
+}
+
+body::-webkit-scrollbar {
+	width:auto; /* Ширина всего элемента навигации */
+}
+
+body::-webkit-scrollbar-track {
+  background: #ffffff; /* Цвет дорожки */
+}	
+
+body::-webkit-scrollbar-thumb {
+  background-color: #5185f5; /* Цвет бегунка */
+  border-radius: 5px; /* Округление бегунка */
+}
+
+
+
+
+/* HEADER */
+
+header {
+    height: 81px;
+    padding-top: 40px;
+}
+
+.logo {
+    margin-top: 5px;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    max-width: 1130px;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    padding-left: 30px;
+    padding-right: 10px;
+    border: 1px solid white;
+}
+
+.links {
+    padding: 25px;
+}
+
+.links a {
+    margin-right: 51px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: inline-block;
+    color: black; /* Цвет обычной ссылки */
+    line-height: 1;
+    text-decoration: none; /* Убираем подчеркивание */
+    cursor: pointer;
+}
+
+.notchoosen::after{
+    background-color: #5185F5; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 3px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+.choosen{
+    border-bottom: solid 3px #5185F5;
+}
+
+.links a:hover:after, .links a:focus:after {
+    width: 100%;
+}
+
+.links a:last-child {
+    margin-right: 0;
+}
+
+
+#sale_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#sale_title {
+    padding: 4.74vh;
+    display: flex;
+    justify-content: center;
+}
+
+#sale_title p {
+    font-size: xx-large;
+    text-align: center;
+    width: 45vw;
+}
+
+#logo_color {
+    color: #5185F5;
+}
+
+
+@media (max-width: 7680px) {
+    #sale_form {
+        width: 960px;
+        height: 470px;
+    }
+    .column{
+        width: 480px;
+        height: 450px;
+    }
+    #left_column input[type="text"], input[type="tel"], select, #price, .room-square {
+        width: 400px;
+        height: 46px;
+    }
+    .rooms {
+        width: 250px;
+    
+    }
+    .square {
+        width: 140px;
+    }
+    #file_area {
+        width: 426px;
+        height: 400px;
+    }
+    #right_column label {
+        width: 426px;
+        height: 400px;
+    }
+  }
+
+  @media (max-width: 990px) {
+    #sale_form {
+        width: 800px;
+        height: 392px;
+    }
+    .column{
+        width: 400px;
+        height: 372px;
+    }
+    #left_column input[type="text"], input[type="tel"], select, #price, .room-square {
+        width: 332px;
+        height: 37px;
+    }
+    #file_area {
+        width: 355px;
+        height: 352px;
+    }
+    #right_column label {
+        width: 355px;
+        height: 267px;
+    }
+    .rooms {
+        width: 207px;
+    
+    }
+    .square {
+        width: 116px;
+    }
+  }
+
+  @media (max-width: 770px) {
+    #sale_form {
+        width: 667px;
+        height: 327px;
+    }
+    .column{
+        width: 333.5px;
+        height: 312px;
+    }
+    #left_column input[type="text"], input[type="tel"], select, #price, .room-square {
+        width: 278px;
+        height: 31px;
+    }
+    #file_area {
+        width: 296px;
+        height: 293.5px;
+    }
+    #right_column label {
+        width: 296px;
+        height: 223px;
+    }
+    .rooms {
+        width: 180px;
+    
+    }
+    .square {
+        width: 80px;
+    }
+  }
+
+#sale_form {
+    display: flex;
+    flex-direction: row;
+    border-radius: 2em;
+    background-color: #5185F5;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+}
+#sale_form form {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+input {
+    font-family: inter;
+    font-weight: 450;
+}
+#left_column input[type="text"], input[type="tel"], select, #price {
+    border: 0px;
+    padding: 0px 29px 1px 29px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 2em;
+    box-sizing: border-box;
+}
+
+#left_column p{
+	font-size: 18px;
+	color: white;
+	width: 100%;
+	padding-left: 90px;
+	text-align: start;
+}
+
+#left_column select {
+    font: inherit;
+    letter-spacing: inherit;
+    word-spacing: inherit;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+#left_column select:not([multiple]) {
+    padding-right: 1.2em;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 0.3em) 0.9em;
+    background-size: 0.85em auto;
+    background-image: url(/image/caret.png);
+  }
+  
+#left_column select::-ms-expand {
+    display: none;
+  }
+
+#left_column input[type="submit"] {
+    cursor: pointer;
+    width: 149px;
+    height: 53px;
+    border: 0px;
+    padding: 0px 10px 1px 10px;
+    margin: 20px 0px 10px 0px;
+    border-radius: 2em;
+    box-sizing: border-box;
+    transition: 0.3s;
+    background-color:  #0A4AD3;
+    color: white;
+
+}
+#left_column input[type="submit"]:hover {
+    cursor: pointer;
+    background-color:  white;
+    color: black;
+}
+
+#left_column {
+    align-items: center;
+    display: flex;
+}
+
+#right_column {
+    align-items: center;
+}
+#right_column label span{
+    display: flex;
+    margin-top: 10px;
+    width: 163px;
+    text-align: center;
+}
+
+#right_column label span.selected{
+    display: none;
+}
+
+#right_column label {
+    cursor: pointer;
+    display: flex;
+    border-radius: 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#right_column label.selected {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 2em;
+}
+
+#file_area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E9E8E8;
+    border-radius: 2em;
+}
+
+#file_area img{
+    height: 34px;
+    width: 28px;
+}
+
+#file_area img.selected{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2em;
+}
+
+#upload_photo{
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    height: 0.1px;
+    width: 0.1px;
+}
+
+.room-square{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px 10px 0px;
+}
+
+.number {
+    border: 0px;
+    border-radius: 2em;
+    box-sizing: border-box;
+}
+.rooms {
+    text-align: left;
+    padding-left: 30px;
+
+}
+.square {
+    text-align: center;
+}
+
+.footer {
+	padding-bottom: 55px;
+	padding-top: 55px;
+	background-color: #5185F5;
+	color: white;
+}
+
+.text {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	max-width: 1130px;
+}
+
+.time {
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.time :first-child {
+	font-size: 24px;
+}
+
+.contact {
+	font-weight: 500;
+	font-size: 20px;
+	text-align: center;
+}
+
+.contact :first-child {
+	font-size: 24px;
+	padding-bottom: 17px;
+}
+
+.adres {
+	font-weight: 500;
+	font-size: 20px;
+	width: 200px;
+}
+
+.pad {
+	padding-bottom: 20px;
+}
+
+.social img {
+	padding-right: 15px;
+	padding-top: 23px;
+
+}
+
+.social {
+	margin-left: 15px;
+}

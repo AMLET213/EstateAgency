@@ -1,0 +1,213 @@
+html{
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	font-family: inter;
+	font-weight: 450;
+	overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+	width:auto; /* Ширина всего элемента навигации */
+}
+
+body::-webkit-scrollbar-track {
+  background: #ffffff; /* Цвет дорожки */
+}	
+
+body::-webkit-scrollbar-thumb {
+  background-color: #5185f5; /* Цвет бегунка */
+  border-radius: 5px; /* Округление бегунка */
+}
+
+body p {
+	line-height: 1.3em;
+}
+
+/* header start */
+.logo {
+	margin-top: 5px;
+}
+
+.content {
+	padding-top: 40px;
+	margin: 0 auto;
+	transition: all 0.75s ease-out;
+}
+
+.top-bar {
+	display: flex;
+	width: 1130px;
+	height: 81px;
+	margin: 0 auto;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.links a {
+    margin-right: 51px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: inline-block;
+    color: black; /* Цвет обычной ссылки */
+    line-height: 1;
+    text-decoration: none; /* Убираем подчеркивание */
+    cursor: pointer;
+}
+
+.links a::after{
+    background-color: #5185F5; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 3px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+.links a:hover:after, .links a:focus:after {
+    width: 100%;
+}
+
+.links a:last-child{
+	margin-right: 32px;
+}
+/* header end */
+
+/* vhod start */
+.admin-vhod{
+	max-width: 560px;
+	background-color: #5185F5;
+	margin: 0 auto;
+	border-radius: 33px;
+	padding: 38px;
+	margin-bottom: 120px;
+	margin-top: 55px;
+}
+
+.vhod{
+	text-align: center;
+}
+
+.vhod h1{
+	font-weight: 400;
+	font-size: 32px;
+	color: white;
+	margin-bottom: 71px;
+}
+
+.vhod p{
+	font-size: 24px;
+	color: white;
+	margin-bottom: 15px;
+}
+
+.vhod p:last-child{
+	width: 100px;
+	font-size: 24px;
+	color: white;
+	margin-bottom: 30px;
+}
+
+input[type=text]{
+	font-size: 20px;
+	box-sizing: border-box;
+	border: 1px solid white;
+	border-radius: 33px;
+	width: 370px;
+	height: 46px;
+	padding: 12px 25px;
+	margin-bottom: 25px;
+	caret-color: #5185F5;
+}
+
+input[type=password]{
+	font-size: 20px;
+	box-sizing: border-box;
+	border: 1px solid white;
+	border-radius: 33px;
+	width: 370px;
+	padding: 12px 25px;
+	margin-bottom: 20px;
+	caret-color: #5185F5;
+}
+
+input[type=submit]{
+	box-sizing: border-box;
+	border-radius: 33px;
+	width: 125px;
+	padding: 12px 25px;
+	background-color: #0A4AD3;
+	color: white;
+	border: none;
+	transition: 0.3s;
+	font-family: inter;
+	font-weight: 450;
+}
+
+input[type=submit]:hover{
+	background-color: white;
+	color: black;
+}
+/* vhod end */
+
+/* footer start */
+.footer {
+	padding-bottom: 55px;
+	padding-top: 55px;
+	background-color: #5185F5;
+	color: white;
+}
+
+.text {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	max-width: 1130px;
+}
+
+.time {
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.time :first-child {
+	font-size: 24px;
+}
+
+.contact {
+	font-weight: 500;
+	font-size: 20px;
+	text-align: center;
+
+
+}
+
+.contact :first-child {
+	font-size: 24px;
+	padding-bottom: 17px;
+}
+
+.adres {
+	font-weight: 500;
+	font-size: 20px;
+	width: 200px;
+}
+
+.pad {
+	padding-bottom: 20px;
+}
+
+.social img {
+	padding-right: 15px;
+	padding-top: 23px;
+
+}
+
+.social {
+	margin-left: 15px;
+}
+/* footer end */

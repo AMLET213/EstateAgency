@@ -1,0 +1,164 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: inter;
+    font-weight: 450;
+}
+
+body p {
+    line-height: 1.3em;
+}
+
+body::-webkit-scrollbar {
+	width:auto; /* Ширина всего элемента навигации */
+}
+
+body::-webkit-scrollbar-track {
+  background: #ffffff; /* Цвет дорожки */
+}	
+
+body::-webkit-scrollbar-thumb {
+  background-color: #5185f5; /* Цвет бегунка */
+  border-radius: 5px; /* Округление бегунка */
+}
+
+
+/* HEADER */
+
+header {
+    height: 81px;
+    padding-top: 40px;
+}
+
+.logo {
+    margin-top: 5px;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    max-width: 1130px;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    padding-left: 30px;
+    padding-right: 10px;
+    border: 1px solid white;
+}
+
+.links {
+    padding: 25px;
+}
+
+.links a {
+    margin-right: 51px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+
+    display: inline-block;
+    color: black; /* Цвет обычной ссылки */
+    line-height: 1;
+    text-decoration: none; /* Убираем подчеркивание */
+    cursor: pointer;
+}
+
+.links a::after{
+    background-color: #5185F5; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 3px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+.links a:hover:after, .links a:focus:after {
+    width: 100%;
+}
+
+.links a:last-child {
+    margin-right: 0;
+}
+
+.error{
+	margin-top: 150px;
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 256px;
+	color: #5185F5;
+}
+
+.text-error{
+	text-align: center;
+	font-size: 24px;
+	color: #5185F5;
+	margin-bottom: 20px;
+}
+
+.text-error:last-child{
+	text-align: center;
+	font-size: 24px;
+	color: #5185F5;
+	margin-bottom: 100px;
+}
+
+.footer {
+	padding-bottom: 55px;
+	padding-top: 55px;
+	background-color: #5185F5;
+	color: white;
+}
+
+.text {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	max-width: 1130px;
+}
+
+.time {
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.time :first-child {
+	font-size: 24px;
+}
+
+.contact {
+	font-weight: 500;
+	font-size: 20px;
+	text-align: center;
+}
+
+.contact :first-child {
+	font-size: 24px;
+	padding-bottom: 17px;
+}
+
+.adres {
+	font-weight: 500;
+	font-size: 20px;
+	width: 200px;
+}
+
+.pad {
+	padding-bottom: 20px;
+}
+
+.social img {
+	padding-right: 15px;
+	padding-top: 23px;
+
+}
+
+.social {
+	margin-left: 15px;
+}
